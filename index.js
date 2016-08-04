@@ -10,7 +10,14 @@
 * It should be a String.
 **/
 
+var firstName = "Coco";
+console.log("firstName: " + firstName);
 
+var lastName = "Sandry";
+console.log("lastName: " + lastName);
+
+var birthPlace = "Honolulu";
+console.log("birthPlace " + birthPlace);
 
 /**
 * #2
@@ -22,8 +29,14 @@
 * Their values should be a Number
 **/
 
+var favoriteNumber = 90;
+console.log("favroiteNumber: " + favoriteNumber);
 
+var currentYear = 2016;
+console.log("currentYear: " + currentYear);
 
+var thatOnePrinceSong = 1999;
+console.log("thatOnePrinceSong: " + thatOnePrinceSong);
 /**
 * #3
 * Variables with Boolean values
@@ -34,7 +47,17 @@
 * Their values should be a Boolean
 **/
 
+var isDaytime = false;
+console.log("isDaytime: " + isDaytime);
 
+var isLeftHanded = false;
+console.log("isLeftHanded: "+ isLeftHanded);
+
+var inHawaii = true;
+console.log("inHawaii: "+inHawaii);
+
+var isHappyCoding = true;
+console.log("isHappyCoding: "+isHappyCoding);
 
 /**
 * #4
@@ -45,7 +68,11 @@
 * Their values should be a Null value
 **/
 
+var enrolledAtDevLeague = null;
+console.log("enrolledAtDevleague: " + enrolledAtDevLeague);
 
+var completedFridayPrep = null;
+console.log("completedFridayPrep: " + completedFridayPrep);
 
 /**
 * #5a
@@ -56,7 +83,8 @@
 * which can be found along the west coast of The United States.
 **/
 
-
+var westCoast = ["Washington", "Oregon", "California", "Alaska"];
+console.log("westCoast: " + westCoast);
 
 /**
 * #5b
@@ -67,7 +95,8 @@
 * Have at least ten even values in this array.
 **/
 
-
+var evenNumbers = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+console.log("evenNumbers: " + evenNumbers);
 
 /**
 * #6a Arithmetic
@@ -80,7 +109,14 @@
 * Extend this behavior to include subtraction, multiplication and division.
 */
 
+var sumOfNumbers = 1+2+3;
+console.log("sumOfNumbers: " + sumOfNumbers);
 
+sumOfNumbers = 1-2-3;
+console.log("sumOfNumbers: " + sumOfNumbers);
+
+sumOfNumbers = 2*3*1;
+console.log("sumOfNumbers: " + sumOfNumbers);
 
 
 /**
@@ -101,8 +137,14 @@
 *   operator(==) vs triple comparison operator(===).
 */
 
+var isEqual = "Tacocat" === "tacocat";
+console.log("isEqual: " + isEqual);
 
+isEqual = 5 =="5";
+console.log("isEqual: " + isEqual);
 
+isEqual = 5 ==="5";
+console.log("isEqual: " + isEqual);
 /**
 * #6c Assignments
 * Variables with the outcome of an assignment operation:
@@ -119,7 +161,20 @@
 *   it can only test that you declared the variable by giving it the right name.
 */
 
+var generalContainer = 5;
+console.log("generalContainer: " + generalContainer);
 
+generalContainer++;
+console.log("generalContainer: " +generalContainer);
+
+generalContainer--;
+console.log("generalContainer: " +generalContainer);
+
+generalContainer+generalContainer--;
+console.log("generalContainer: " +generalContainer);
+
+generalContainer--+generalContainer;
+console.log("generalContainer: " +generalContainer);
 
 /**
 * #7a
@@ -133,8 +188,14 @@
 * Store the return value to a variable named `jumpResult` and use console.log to inspect the value which was returned by your function
 **/
 
+function jump(height){
+	return jumpResult = "You jumped "+ height +" feet high!";
+}
 
+jump();
 
+var jumpResult = jump(9);
+console.log("jump:" + jump(jumpResult));
 /**
 * #7b
 * Declare Functions
@@ -145,3 +206,12 @@
 * if invoked in this way -> cook("Tomatoes", "Cheese", "Pizza");
 **/
 
+
+function cook(ingredient1, ingredient2, recipeName){
+
+	return ingredient1 + " and " + ingredient2 + " make a " + recipeName + "!";
+}
+
+cook();
+
+console.log("cook:" + cook("Tomatoes", "Cheese", "Pizza"));
